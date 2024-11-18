@@ -1,15 +1,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export function ParallaxBackground() {
-  const { scrollY } = useScroll();
-  
-  const y1 = useTransform(scrollY, [0, 1000], [0, -150]);
-  const y2 = useTransform(scrollY, [0, 1000], [0, -250]);
-  const y3 = useTransform(scrollY, [0, 1000], [0, -350]);
+
   
   return (
     <div className="fixed inset-0 z-0 overflow-hidden">
-      <motion.div 
+      {/* <motion.div 
         style={{ y: y1 }}
         className="absolute inset-0"
       >
@@ -51,7 +47,7 @@ export function ParallaxBackground() {
           </defs>
         </svg>
       </motion.div>
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/60" /> */}
     </div>
   );
 }
